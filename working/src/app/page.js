@@ -38,7 +38,7 @@ function Home() {
     return (
         <main>
             <h1>Welcome!</h1>
-            <HitCounter currentVisitor={currentVisitor}/>
+            You are visitor <HitCounter currentVisitor={currentVisitor}/>
         </main>
     );
 }

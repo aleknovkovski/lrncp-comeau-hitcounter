@@ -3,7 +3,9 @@ import React from "react";
 function HitCounter({currentVisitor}) {
 
     return (
-            <p>You are visitor number {currentVisitor}.</p>
+            <button className="censored">
+                {currentVisitor}
+            </button>
     );
 }
 
