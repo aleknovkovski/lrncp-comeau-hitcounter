@@ -4,6 +4,7 @@ import {
     readFile,
     writeFile,
 } from '../helpers/file-helpers';
+import HitCounter from "../../components/HitCounter";
 
 const DATABASE_PATH = '/src/database.json';
 
@@ -37,7 +38,7 @@ function Home() {
     return (
         <main>
             <h1>Welcome!</h1>
-            <p>You are visitor number {currentVisitor}.</p>
+            <HitCounter currentVisitor={currentVisitor}/>
         </main>
     );
 }
