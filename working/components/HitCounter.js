@@ -6,7 +6,10 @@ function HitCounter({currentVisitor}) {
 
     let buttonClass = isCensored ? "censored" : null
     return (
-            <button className={buttonClass}>
+            <button
+                className={buttonClass}
+                onClick={()=> setIsCensored(!isCensored)}
+            >
                 {currentVisitor}
             </button>
     );
